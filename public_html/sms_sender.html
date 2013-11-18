@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Send SMS Message - SMS Gateway Server</title>
+		<link rel="stylesheet" href="sms_sender.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="sub-wrapper">
+				<h1>Send SMS Message</h1>
+				<form action="http://${SERVER}/send_message" method="post">
+					<table>
+						<tr>
+							<th>Recipient(s):</th>
+							<td>
+								<textarea id="recipient-box" name="recipients" cols="40" rows="2"></textarea><br />
+								<span class="small-text">Note: To specify multiple recipients separate numbers with semicolons</span>
+							</td>
+						</tr>
+						<tr>
+							<th>Message:</th>
+							<td>
+								<textarea name="message" id="message-box" cols="40" rows="5"></textarea><br />
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="h-center">
+								<input type="submit" value="Send Message(s)" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="push"></div>
+		</div>
+		<div id="footer">
+			<p>${VERSION}</p>
+		</div>
+	</body>
+</html>
