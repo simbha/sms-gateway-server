@@ -6,8 +6,8 @@ Top level application file for the "SMS Gateway Server" application.
 __version__ = '1.1'
 APP_NAME = 'SMS Gateway Server'
 AUTHOR = 'Craig Dodd'
-ORGANIZATION = 'Shelltoad Computing'
-COPYRIGHT = 'GNU General Public License v3'
+ORGANIZATION = 'CDodd'
+COPYRIGHT = 'MIT License'
 
 # Try to import required modules
 try:
