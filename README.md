@@ -10,9 +10,9 @@ The SMS Gateway Server makes use of the following modules, they are also require
 - [pyserial 2.5](http://sourceforge.net/projects/pyserial/files/)
 
 ## Usage
-When you first run the SMS Gateway Server you will need to configure your COM port and HTTP port settings. You can do this using the settings dialog at `File` -> `Settings`. Once you have chosen your COM port and server port, start the HTTP server by choosing `Server` -> `Start Server`, and connect the COM port by choosing `COM Port` -> `Connect COM Port`.
+When you first run the SMS Gateway Server you will need to configure your COM port and HTTP port settings. You can do this using the settings dialog at `File` > `Settings`. Once you have chosen your COM port and server port, start the HTTP server by choosing `Server` > `Start Server`, and connect the COM port by choosing `COM Port` > `Connect COM Port`.
 
-When you close the application it will minimise to the system tray and run in the background. To end the application either select `File` -> `Exit` on the main window or right click the system tray icon (a yellow envelope) and click Exit. To restore to main application window when it is minimised right click the system tray icon and select Restore.
+When you close the application it will minimise to the system tray and run in the background. To end the application either select `File` > `Exit` on the main window or right click the system tray icon (a yellow envelope) and click Exit. To restore to main application window when it is minimised right click the system tray icon and select Restore.
 
 Once you have chosen your settings the application will remember them. When you start the application and it finds the saved settings it will automatically start the server and connect the COM port, then minimise the application to the system tray.
 
@@ -20,7 +20,7 @@ Once you have chosen your settings the application will remember them. When you 
 To send an SMS message using the web form provided by the server:
 
 - Make sure the server is running and that the serial port is connected.
-- Open a web browser at http://hostname:port/sms_sender.html, where hostname and port match your current settings. You can also choose `Server` -> `Launch Browser` from the main application window.
+- Open a web browser at http://hostname:port/sms_sender.html, where hostname and port match your current settings. You can also choose `Server` > `Launch Browser` from the main application window.
 - Fill in the form and click the "Send Message(s)" button.
 
 You can send a message to multiple recipients using the web form. Recipient addresses should be separated by a comma.
